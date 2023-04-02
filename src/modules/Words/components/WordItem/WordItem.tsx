@@ -2,10 +2,10 @@ import { FC } from 'react';
 
 import { StyledWordItem } from './WordItemStyles';
 
-import WordItemComponent from '@/models/word.model';
+import WordItem from '@/models/word.model';
 
 interface WordItemProps {
-  word: WordItemComponent;
+  word: WordItem;
 }
 
 const WordItemComponent: FC<WordItemProps> = ({ word }) => {

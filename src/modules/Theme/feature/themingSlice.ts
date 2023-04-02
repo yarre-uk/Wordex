@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 import { initialState, Theme, THEMING_SLICE_NAME } from './models';
 
-const themingSlice = createSlice({
+export const themingSlice = createSlice({
   name: THEMING_SLICE_NAME,
   initialState,
   reducers: {
