@@ -44,7 +44,7 @@ export const COLORS = {
     DARK: '#202125',
   },
   PRIMARY: {
-    LIGHT: '#C3B4E4',
+    LIGHT: '#9576db',
     DARK: '#674299',
   },
   SECONDARY: {

@@ -27,3 +27,8 @@ export const StyledHeaderBlock = styled.div`
   align-items: center;
   gap: 1.5rem;
 `;
+
+export const StyledLogo = styled.h2`
+  user-select: none;
+  cursor: pointer;
+`;
