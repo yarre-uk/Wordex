@@ -1,0 +1,23 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+import { LayoutContainer } from './modules/Layout';
+import { ThemeConfigProvider } from './modules/Theme';
+import { Home } from './pages';
+import GlobalStyles from './styles/globals';
+
+const App = () => {
+  return (
+    <BrowserRouter>
+      <ThemeConfigProvider>
+        <GlobalStyles />
+        <Routes>
+          <Route path="/" element={<LayoutContainer />}>
+            <Route index element={<Home />} />
+          </Route>
+        </Routes>
+      </ThemeConfigProvider>
+    </BrowserRouter>
+  );
+};
+
+export default App;
