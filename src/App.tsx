@@ -10,7 +10,6 @@ const App = () => {
     <HashRouter>
       <ThemeConfigProvider>
         <GlobalStyles />
-        <div>hello</div>
         <Routes>
           <Route path="/" element={<LayoutContainer />}>
             <Route index element={<Home />} />
