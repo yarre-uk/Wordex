@@ -1,4 +1,4 @@
-import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 
 import { LayoutContainer } from './modules/Layout';
 import { ThemeConfigProvider } from './modules/Theme';
