@@ -1,21 +1,23 @@
 import { FC } from 'react';
 
-import { StyledWordContainer } from './WordContainerStyled';
-import { WordItemComponent } from '../../components';
+import {
+  StyledWordContainer,
+  StyledWordContainerList,
+} from './WordContainerStyled';
+import { InputForm, WordItem } from '../../components';
 
-import WordItem from '@/models/word.model';
+import Word from '@/models/word.model';
 
 interface ToDoContainerProps {
-  words: WordItem[];
+  words: Word[];
 }
 
 const WordContainer: FC<ToDoContainerProps> = ({ words: words }) => {
-  const content = words.map((word) => (
-    <WordItemComponent key={word.id} word={word} />
-  ));
+  const content = words.map((word) => <WordItem key={word.id} word={word} />);
   return (
     <StyledWordContainer>
-      <ul>{content}</ul>
+      <InputForm />
+      <StyledWordContainerList>{content}</StyledWordContainerList>
     </StyledWordContainer>
   );
 };

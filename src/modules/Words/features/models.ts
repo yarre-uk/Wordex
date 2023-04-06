@@ -1,9 +1,9 @@
-import WordItem from '@/models/word.model';
+import Word from '@/models/word.model';
 
 export const WORD_SLICE_NAME = 'words';
 
 export interface WordState {
-  words: WordItem[];
+  words: Word[];
 }
 
 export const initialState: WordState = {

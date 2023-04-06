@@ -1,7 +1,7 @@
-interface WordItem {
+interface Word {
   id: number;
   word: string;
   translation: string;
 }
 
-export default WordItem;
+export default Word;
